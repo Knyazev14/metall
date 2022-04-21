@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="css/style.min.css?_v=20220420183343">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220421234813">
 	<title>Главная</title>
 </head>
 
@@ -26,7 +26,16 @@
 					</nav>
 					<div class="header__body-top-actions actions-top">
 						<a class="actions-top__phone" href="tel:+7(499)380-78-90">+7 (499) 380-78-90</a>
-						<a class="actions-top__location" href="#"><span class="actions-top__location-text">Москва</span><img class="actions-top__location-arrow" src="img/arrow.svg" alt="image"></a>
+						<div class="actions-top__location">
+							<button class="actions-top__location-btn">
+								<span class="actions-top__location-text">Москва</span>
+								<img class="actions-top__location-arrow" src="img/arrow.svg" alt="image">
+							</button>
+							<ul class="actions-top__location-list">
+								<li class="actions-top__location-item">Санкт-Петербург</li>
+								<li class="actions-top__location-item">Москва</li>
+							</ul>
+						</div>
 						<a class="actions-top__email" href="mailto:info@bastion.pro">info@bastion.pro</a>
 					</div>
 				</div>
@@ -41,17 +50,43 @@
 			<div class="container">
 				<div class="header__body-bottom-inner bottom-inner">
 					<div class="bottom-inner__left">
-						<a class="logo" href="#"><img class="logo-image" src="img/logo.svg" alt="logotype"></a>
+						<a class="logo" href="#">
+							<img class="logo-image" src="img/logo.svg" alt="logotype">
+						</a>
 						<h1 class="bottom-inner__title">Федеральный<br>производитель<br>металлоизделий</h1>
-						<button class="bottom-inner__menu-icon"><img class="bottom-inner__menu-icon-image" src="img/catalog.svg" alt="image"><span class="bottom-inner__menu-icon-text">Каталог</span></button>
-						<div class="menu-burger">
-							<span></span>
-						</div>
+
+						<button class="bottom-inner__menu-icon">
+							<img class="bottom-inner__menu-icon-image" src="img/catalog.svg" alt="image">
+							<span class="bottom-inner__menu-icon-text">Каталог</span>
+							<div class="menu-burger">
+								<span></span>
+							</div>
+						</button>
+					
+						<nav class="bottom-inner__menu-bottom menu-bottom">
+							<div class="menu-bottom__body"></div>
+							<ul class="menu-bottom__list">
+								<li class="menu-bottom__list-item one">
+									Анкерные тяги
+								</li>
+								<li class="menu-bottom__list-item two">
+									Арматура трубопроводов
+								</li>
+								<li class="menu-bottom__list-item three">Блоки пружинные
+								</li>
+								<li class="menu-bottom__list-item four">Быстровозводимые здания</li>
+								<li class="menu-bottom__list-item five">Высотные сооружения</li>
+								<li class="menu-bottom__list-item six">Двери</li>
+								<li class="menu-bottom__list-item seven">Для дома и сада</li>
+								<li class="menu-bottom__list-item eight">Емкости</li>
+							</ul>
+						</nav>
+
 					</div>
 					<div class="bottom-inner__right">
 						<div class="bottom-inner__search-form search-form">
 							<button class="search-form__btn"><img class="search-form__btn-image" src="img/search.svg" alt="image"></button>
-							<input classs="search-form__txt" autocomplete="off" placeholder="Поиск по названию..." type="text">
+							<input classs="search-form__txt" autocomplete="off" placeholder="Поиск по названию..." type="text" style="width: 130px;">
 						</div>
 						<button class="bottom-inner__feddback">Заказать звонок</button>
 						<div class="bottom-inner__actions">
@@ -73,12 +108,85 @@
 
 	</div>
 </header>
-		<main>
+		<main class="main">
+
+			<section class="banner">
+				<div class="container">
+					<div class="banner__body banner-body">
+						<h2 class="banner-body__title">Производим металлические<br>изделия с<br><span class="banner-body__title-year">2010</span>года</h2>
+						<div class="banner-body__text">Умеем договариваться на выгодных для вас условиях!</div>
+					</div>
+					<div class="banner__cards">
+						<div class="banner__cards-row cards-row">
+							<div class="cards-row__item">
+								<div class="cards-row__block-image">
+									<img class="cards-row__image like" src="img/like.svg" alt="image">
+								</div>
+								<div class="cards-row__text">Найдем<span class="cards-row__text--red">компромисс</span>с любым заказчиком</div>
+							</div>
+							<div class="cards-row__item ">
+								<div class="cards-row__block-image ">
+									<img class="cards-row__image list" src="img/list.svg" alt="image">
+								</div>
+								<div class="cards-row__text">Весь<span class="cards-row__text--red">комплекс</span>подрядных услуг
+									</div>
+							</div>
+							<div class="cards-row__item ">
+								<div class="cards-row__block-image ">
+									<img class="cards-row__image ab" src="img/ab.svg" alt="image">
+								</div>
+								<div class="cards-row__text">Финансовые гарантии от<span class="cards-row__text--red">«Альфа банка»</span></div>
+							</div>
+							<div class="cards-row__item">
+								<div class="cards-row__block-image ">
+									<img class="cards-row__image car" src="img/car.svg" alt="image">
+								</div>
+								<div class="cards-row__text"><span class="cards-row__text--red">Доставка</span> в любой регион
+									</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about-counter">
+				<div class="container">
+					<div class="about-counter__title title">Инженерно-производственный холдинг</div>
+					<div class="about-counter__body counter-body">
+						<div class="counter-body__columns">
+							<div class="counter-body__columns-one">
+								<div class="counter-body__columns-item columns-item">
+									<div class="colums-item__out" id="out-1">1</div>
+									<div class="colums-item__text">Производственные базы (Москва и Санкт-Петербург)</div>
+								</div>
+								<div class="counter-body__columns-item columns-item">
+									<div class="colums-item__out" id="out-2">1</div>
+									<div class="colums-item__text">м2 производственных площадей</div>
+								</div>
+							</div>
+							<div class="counter-body__columns-two">
+								<div class="counter-body__columns-item columns-item">
+									<div class="colums-item__out" id="out-3">1</div>
+									<div class="colums-item__text">единиц профессионального оборудования</div>
+								</div>
+								<div class="counter-body__columns-item columns-item">
+									<div class="colums-item__out" id="out-4">1</div>
+									<div class="colums-item__text">тонн выпускаемой продукции ежегодно</div>
+								</div>
+							</div>
+								
+						</div>
+						<div class="counter-body__image-content">
+							<picture><source srcset="img/counter.webp" type="image/webp"><img class="counter-body__image" src="img/counter.png" alt="image"></picture>
+						</div>
+					</div>
+				</div>
+			</section>
+
 		</main>
 		<footer></footer>
 	</div>
 
-	<script src="js/app.min.js?_v=20220420183343"></script>
+	<script src="js/app.min.js?_v=20220421234813"></script>
 </body>
 
 </html>
